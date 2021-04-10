@@ -5230,7 +5230,7 @@ table tr:nth-child(odd) td {
 
 @media (max-width: 1199px) {
 	.slider-double__child .slider-double__slide img {
-		height: auto;
+		height: 90px;
 	}
 
 
