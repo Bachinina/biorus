@@ -40,6 +40,13 @@ $(document).ready(function () {
       infinite: !isChildStatic,
       prevArrow: prevArrow,
       nextArrow: nextArrow,
+      responsive: [{
+        breakpoint: 1199,
+        settings: {
+          arrows: false,
+          draggable: true,
+        }
+      }]
     });
 
 
@@ -80,7 +87,6 @@ $(document).ready(function () {
             draggable: true,
             speed: 150,
             slidesToShow: 3,
-            arrows: false,
           }
         },
         {
