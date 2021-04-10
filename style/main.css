@@ -5508,6 +5508,12 @@ table tr:nth-child(odd) td {
 	visibility: hidden;
 }
 
+@media(max-width: 767px) {
+	.simple-arrows:not(.shown) .slick-arrow {
+		display: none;
+	}
+}
+
 .simple-arrows .slick-arrow::before {
 	display: none;
 }
