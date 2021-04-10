@@ -80,6 +80,7 @@ $(document).ready(function () {
             draggable: true,
             speed: 150,
             slidesToShow: 3,
+            arrows: false,
           }
         },
         {
