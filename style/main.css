@@ -5239,6 +5239,12 @@ table tr:nth-child(odd) td {
 	}
 }
 
+@media (max-width: 767px) {
+	.slider-double__child .slider-double__slide img {
+		height: 60px;
+	}
+}
+
 .slider-double__child .slick-arrow::before {
 	border-color: #a0a0a0;
 }
