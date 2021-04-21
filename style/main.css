@@ -2624,17 +2624,43 @@ a:active {
 .footer {
 	background: url("https://bio-rus.ru/assets/template/img/footer-bg.jpg") no-repeat;
 	background-size: cover;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.2;
 }
 
 .footer__top {
 	padding: 50px 0;
 	padding-top: 70px;
-	background: url("https://bio-rus.ru/assets/template/img/footer-icon.svg") no-repeat 48% center;
+	/* background: url("https://bio-rus.ru/assets/template/img/footer-icon.svg") no-repeat 48% center; */
 }
 
 .footer__bottom {
 	padding: 20px 0;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.7);
+	margin-top: 15px;
+}
+
+
+.footer__copy {
+	background: rgba(0, 0, 0, 0.75);
+	padding: 27px;
+	text-align: center;
+}
+
+
+@media (max-width: 767px) {
+	.footer__bottom {
+		padding-bottom: 0;
+	}
+
+	.footer__top {
+		padding: 30px 0;
+	}
+
+	.footer__copy {
+		padding: 15px;
+	}
 }
 
 .footer__lang {
@@ -2643,17 +2669,18 @@ a:active {
 
 .footer__label {
 	font-size: 15px;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
 	margin-top: 15px;
+	margin-bottom: 30px;
 }
 
 .footer__section:not(:last-child) {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .footer__section-title {
 	margin: 0;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -2669,20 +2696,20 @@ a:active {
 
 .footer__section-wrapper p {
 	margin: 0;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
 	font-size: 15px;
 	margin-top: 5px;
 }
 
 .footer__section-wrapper a {
 	margin: 0;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
 	font-size: 15px;
 	margin-top: 5px;
 }
 
 .footer__section-wrapper a::after {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 1);
 }
 
 .sidebar__grid {
@@ -3358,10 +3385,9 @@ a:active {
 
 .copyright {
 	margin: 0;
-	font-size: 12px;
-	color: rgba(255, 255, 255, 0.25);
-	font-weight: bold;
-	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: normal;
 }
 
 .footer-menu {
@@ -3386,14 +3412,48 @@ a:active {
 }
 
 .footer-menu__link {
-	font-size: 12px;
+	font-size: 18px;
+	line-height: 1.2;
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .footer-menu__link:not(:last-child) {
 	margin-bottom: 30px;
+}
+
+.footer__column {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+	.footer-menu__link:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.footer__column {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.footer-menu__link {
+		font-size: 16px;
+	}
+
+	.footer__column {
+		margin-bottom: 15px;
+	}
+
+	.footer__column:not(.def) {
+		margin-bottom: 30px;
+	}
+
+	.footer__column:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .template {
@@ -4726,9 +4786,10 @@ table tr:nth-child(odd) td {
 		font-size: 16px;
 	}
 
+	/* 
 	.footer-menu__link {
 		font-size: 11px;
-	}
+	} */
 
 	.no-page__grid {
 		padding: 0;
