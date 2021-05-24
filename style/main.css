@@ -5869,6 +5869,10 @@ table tr:nth-child(odd) td {
 	color: #595959
 }
 
+.card__title a {
+	text-decoration: none;
+}
+
 @media (max-width: 767px) {
 	.card-hor {
 		flex-direction: column;
